@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>196</width>
+    <height>253</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IP Helper</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	color: rgb(0, 0, 0);
+}
+
+QPushButton[color=green] {
+	background-color: rgb(212, 253, 212, 92);
+}
+
+QPushButton:checked[color=green] {
+	background-color: rgb(0, 255, 0);
+}
+
+QPushButton[color=red] {
+	background-color: rgb(255, 179, 180, 92);
+}
+
+QPushButton:checked[color=red] {
+	background-color: rgb(255, 0, 0);
+}
+
+QPushButton[color=orange] {
+	background-color: rgb(255, 221, 187, 92);
+}
+
+QPushButton:checked[color=orange] {
+	background-color: rgb(255, 170, 0);
+}
+
+QLineEdit[active=true] {
+	background-color: rgb(170, 255, 127);
+	color: rgb(0, 0, 0);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QPushButton" name="uiTrellis01BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>red</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="uiTrellis06BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>64</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="4">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QPushButton" name="uiTrellis15BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>First</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="uiTrellis00BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="uiTrellis07BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>128</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="uiTrellis03BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>8</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="uiTrellis10BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="uiTrellis04BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>16</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="uiTrellis12BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Fourth</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="uiTrellis02BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QPushButton" name="uiTrellis11BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="uiTrellis05BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>32</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="uiTrellis09BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QPushButton" name="uiTrellis14BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Second</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>orange</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="uiTrellis13BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Third</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>red</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="uiTrellis08BTN">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="color" stdset="0">
+      <string>green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="uiFirstTetTXT">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>192</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="active" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="uiSecondTetTXT">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>168</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="active" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="uiThirdTetTXT">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="active" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="uiFourthTetTXT">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>101</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="active" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>uiFirstTetTXT</tabstop>
+  <tabstop>uiSecondTetTXT</tabstop>
+  <tabstop>uiThirdTetTXT</tabstop>
+  <tabstop>uiFourthTetTXT</tabstop>
+  <tabstop>uiTrellis00BTN</tabstop>
+  <tabstop>uiTrellis01BTN</tabstop>
+  <tabstop>uiTrellis02BTN</tabstop>
+  <tabstop>uiTrellis03BTN</tabstop>
+  <tabstop>uiTrellis04BTN</tabstop>
+  <tabstop>uiTrellis05BTN</tabstop>
+  <tabstop>uiTrellis06BTN</tabstop>
+  <tabstop>uiTrellis07BTN</tabstop>
+  <tabstop>uiTrellis08BTN</tabstop>
+  <tabstop>uiTrellis09BTN</tabstop>
+  <tabstop>uiTrellis10BTN</tabstop>
+  <tabstop>uiTrellis11BTN</tabstop>
+  <tabstop>uiTrellis12BTN</tabstop>
+  <tabstop>uiTrellis13BTN</tabstop>
+  <tabstop>uiTrellis14BTN</tabstop>
+  <tabstop>uiTrellis15BTN</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis00BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-51</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis01BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-40</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis02BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis03BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis04BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-85</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis05BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-54</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis06BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>270</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis07BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis08BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-38</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis09BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-73</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis10BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uiTrellis11BTN</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>buttonPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>156</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>buttonPressed()</slot>
+ </slots>
+</ui>
