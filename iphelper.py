@@ -90,6 +90,7 @@ class IPHelper(QDialog):
 
 
 # Code to load a ui file like using PyQt4
+# https://www.mail-archive.com/pyside@lists.openbossa.org/msg01401.html
 class MyQUiLoader(QUiLoader):
 	def __init__(self, baseinstance):
 		super(MyQUiLoader, self).__init__()
